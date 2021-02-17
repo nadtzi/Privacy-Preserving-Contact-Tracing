@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BeaconReceiver</string>
+
+    <string name="no_location_permission">No location permission</string>
+</resources>
