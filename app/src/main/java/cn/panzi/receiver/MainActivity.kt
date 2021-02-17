@@ -62,14 +62,15 @@ class MainActivity : AppCompatActivity(), BeaconConsumer {
     private fun initBeaconManager() {
 
     beaconManager = BeaconManager.getInstanceForApplication(this)
-        beaconManager.beaconParsers.add(BeaconParser().setBeaconLayout("m:2-3=beac,i:4-5,p:6-6,d:7-25"))
+        beaconManager.beaconParsers.add(BeaconParser().setBeaconLayout("m:2-3=beac,i:4-19,i:20-21,i:22-23,p:24-24,d:25-25"))
         beaconManager.bind(this)
         var texttest = "test data"
 
 
         val beacon = Beacon.Builder()
-                .setId1(Identifier.fromInt(0x8b9c).toString())
-               // .setId2(Identifier.fromBytes(getTEK(),0,16,false).toString())
+                .setId1(Identifier.fromBytes(getTEK(),0,16,false).toUuidString())
+               .setId2("1")
+                .setId3("2")
 
 
 
@@ -79,7 +80,7 @@ class MainActivity : AppCompatActivity(), BeaconConsumer {
                 .build()
 
         val beaconParser = BeaconParser()
-                .setBeaconLayout("m:2-3=beac,i:4-5,p:6-7,d:7-25");
+                .setBeaconLayout("m:2-3=beac,i:4-19,i:20-21,i:22-23,p:24-24,d:25-25");
         val beaconTransmitter = BeaconTransmitter(applicationContext, beaconParser)
         beaconTransmitter.startAdvertising(beacon)
 
