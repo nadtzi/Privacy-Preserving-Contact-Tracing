@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Privacy Preserving Contact Tracing</string>
+    <string name="home_nav"> Home </string>
+    <string name="heatmap_nav"> Heat Map</string>
+    <string name="info_nav"> Info </string>
+    <string name="report_nav">Report Positive</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Report Positive</string>
+</resources>
