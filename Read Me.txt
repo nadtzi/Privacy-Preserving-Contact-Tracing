@@ -1,0 +1,3 @@
+Privacy Preserving Contact Tracing - Android Studio (Kotlin)
+
+This project aims to develop an appropriate solution to preserve the user’s privacy while tracing any sign of contact with users infected with covid-19 or any other infectious disease. This would help to minimize further chances of infections and also ensure that users feel safer while using the system. The solution uses Bluetooth and GPS location while also applying cryptographic techniques to Bluetooth and GPS data to enhance the privacy of the users and make exchange of their sensitive personal data safe.
